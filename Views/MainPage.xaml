@@ -24,6 +24,8 @@
                 Style="{StaticResource SubHeadline}"
                 Text="Welcome to &#10;.NET Multi-platform App UI" />
 
+            <Label SemanticProperties.HeadingLevel="Level3" Text="Welcome Back To MAUI" />
+
             <Button
                 x:Name="CounterBtn"
                 Clicked="OnCounterClicked"

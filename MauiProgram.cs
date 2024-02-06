@@ -1,4 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
+using Neptune.Templates;
+using Neptune.Views;
+using The49.Maui.BottomSheet;
+using UraniumUI;
 
 namespace Neptune
 {
@@ -9,6 +13,9 @@ namespace Neptune
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseUraniumUI()
+                .UseUraniumUIMaterial()
+                .UseBottomSheet()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -21,7 +28,8 @@ namespace Neptune
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddTransient<OptionSheet>();
+            builder.Services.AddTransient<MainPage>();
             return builder.Build();
         }
     }

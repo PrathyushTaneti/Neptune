@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<the49:BottomSheet
+    x:Class="Neptune.Templates.OptionSheet"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:the49="https://schemas.the49.com/dotnet/2023/maui"
+    BackgroundColor="Gainsboro"
+    CornerRadius="10"
+    HasBackdrop="True"
+    HasHandle="True"
+    IsCancelable="False">
+    <the49:BottomSheet.Detents>
+        <the49:MediumDetent />
+    </the49:BottomSheet.Detents>
+    <VerticalStackLayout Padding="0,30,0,0">
+        <Label
+            HorizontalOptions="Center"
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" />
+        <Label
+            HorizontalOptions="Center"
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" />
+        <Label
+            HorizontalOptions="Center"
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" />
+        <Label
+            HorizontalOptions="Center"
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" />
+        <Button
+            Margin="30"
+            Clicked="Button_Clicked"
+            FontAttributes="Bold"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"
+            Text="Close"
+            VerticalOptions="End" />
+    </VerticalStackLayout>
+</the49:BottomSheet>
